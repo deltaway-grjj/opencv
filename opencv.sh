@@ -5,5 +5,9 @@ cmake \
 g++ \
 git \
 make
-git clone https://github.com/opencv/opencv.git --branch master
+wget -O opencv.zip https://github.com/opencv/opencv/archive/master.zip
+unzip opencv.zip
+mv opencv-master opencv
+mkdir -p build && cd build
+cmake -S /home/pi/opencv
 echo "FIM"
