@@ -1,6 +1,6 @@
 
 #!/bin/sh
-sudo apt-get update && sudo apt-get -y install \
+sudo apt update && sudo apt -y install \
 cmake \
 g++ \
 git \
