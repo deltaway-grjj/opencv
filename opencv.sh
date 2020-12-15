@@ -10,5 +10,6 @@ wget -O ~/opencv.zip https://github.com/opencv/opencv/archive/master.zip
 unzip opencv.zip
 mv ~/opencv-master ~/opencv
 mkdir -p ~/opencv/build && cd ~/opencv/build
-export JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:bin/java::")
+#export JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:bin/java::")
+JAVA_HOME="/usr/lib/jvm/java-8-openjdk-armhf"
 cmake -S ~/opencv -B ~/opencv/build/
