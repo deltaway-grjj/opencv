@@ -12,4 +12,10 @@ mv ~/opencv-master ~/opencv
 mkdir -p ~/opencv/build && cd ~/opencv/build
 #export JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:bin/java::")
 JAVA_HOME="/usr/lib/jvm/java-8-openjdk-armhf"
+sudo sed -i 's/CONF_SWAPSIZE=100/CONF_SWAPSIZE=1024/g' /etc/dphys-swapfile
+sudo /etc/init.d/dphys-swapfile stop
+sudo /etc/init.d/dphys-swapfile start
 cmake -S ~/opencv -B ~/opencv/build/
+sudo sed -i 's/CONF_SWAPSIZE=1024/CONF_SWAPSIZE=100/g' /etc/dphys-swapfile
+sudo /etc/init.d/dphys-swapfile stop
+sudo /etc/init.d/dphys-swapfile start
