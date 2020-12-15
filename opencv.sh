@@ -11,7 +11,8 @@ unzip opencv.zip
 mv ~/opencv-master ~/opencv
 mkdir -p ~/opencv/build && cd ~/opencv/build
 #export JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:bin/java::")
-JAVA_HOME="/usr/lib/jvm/java-8-openjdk-armhf"
+export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-armhf"
+#https://www.learnopencv.com/build-and-install-opencv-4-for-raspberry-pi/
 sudo sed -i 's/CONF_SWAPSIZE=100/CONF_SWAPSIZE=1024/g' /etc/dphys-swapfile
 sudo /etc/init.d/dphys-swapfile stop
 sudo /etc/init.d/dphys-swapfile start
