@@ -5,10 +5,9 @@ cmake \
 g++ \
 git \
 make
-wget -O opencv.zip https://github.com/opencv/opencv/archive/master.zip
+wget -O ~/opencv.zip https://github.com/opencv/opencv/archive/master.zip
 unzip opencv.zip
-mv opencv-master opencv
-mkdir -p build && cd build
+mv ~/opencv-master ~/opencv
+mkdir -p ~/opencv/build && cd ~/opencv/build
 export JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:bin/java::")
-cmake -S /home/pi/opencv
-echo "FIM"
+cmake -S ~/opencv
