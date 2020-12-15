@@ -4,7 +4,8 @@ sudo apt update && sudo apt -y install \
 cmake \
 g++ \
 git \
-make
+make \
+ffmpeg
 wget -O ~/opencv.zip https://github.com/opencv/opencv/archive/master.zip
 unzip opencv.zip
 mv ~/opencv-master ~/opencv
