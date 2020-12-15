@@ -11,4 +11,4 @@ unzip opencv.zip
 mv ~/opencv-master ~/opencv
 mkdir -p ~/opencv/build && cd ~/opencv/build
 export JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:bin/java::")
-cmake -S ~/opencv
+cmake -S ~/opencv -B ~/opencv/build/
