@@ -2,10 +2,11 @@
 #!/bin/sh
 sudo apt update && sudo apt -y install \
 cmake \
+ffmpeg \
 g++ \
 git \
 make \
-ffmpeg
+openjdk-8-jdk
 wget -O ~/opencv/opencv.zip https://github.com/opencv/opencv/archive/master.zip
 unzip ~/opencv/opencv.zip
 mv ~/opencv/opencv-master ~/opencv/opencv
