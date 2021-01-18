@@ -17,7 +17,7 @@ export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-armhf"
 sudo sed -i 's/CONF_SWAPSIZE=100/CONF_SWAPSIZE=1024/g' /etc/dphys-swapfile
 sudo /etc/init.d/dphys-swapfile stop
 sudo /etc/init.d/dphys-swapfile start
-cmake -S ~/opencv/opencv -B ~/opencv/build/
+cmake -D ANT_EXECUTABLE=/usr/bin/ant -S ~/opencv/opencv -B ~/opencv/build/ -D BUILD_NEW_PYTHON_SUPPORT=NO
 make -j4
 sudo sed -i 's/CONF_SWAPSIZE=1024/CONF_SWAPSIZE=100/g' /etc/dphys-swapfile
 sudo /etc/init.d/dphys-swapfile stop
