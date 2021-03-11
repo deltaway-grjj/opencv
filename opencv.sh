@@ -6,7 +6,7 @@ ffmpeg \
 g++ \
 git \
 make \
-openjdk-8-jdk
+#openjdk-8-jdk
 wget -O ~/opencv/opencv.zip https://github.com/opencv/opencv/archive/master.zip
 unzip ~/opencv/opencv.zip
 mv ~/opencv/opencv-master ~/opencv/opencv
