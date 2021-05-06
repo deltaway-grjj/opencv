@@ -5,7 +5,8 @@ tar -xzf packages.tar.gz
 sudo dpkg -i archives/*.deb
 #wget -O ~/opencv/opencv.zip https://github.com/opencv/opencv/archive/master.zip
 #unzip ~/opencv/opencv.zip
-unzip opencv/opencv.zip -d opencv/
+#unzip opencv/opencv.zip -d opencv/
+wget ftp://teste:@192.168.10.238/opencv.tar.gz
 #mv ~/opencv/opencv-master ~/opencv/opencv
 #mkdir -p ~/opencv/build && cd ~/opencv/build
 mkdir opencv/opencv-master/build
