@@ -7,7 +7,8 @@ sudo dpkg -i archives/*.deb
 #unzip ~/opencv/opencv.zip
 unzip opencv/opencv.zip -d opencv/
 #mv ~/opencv/opencv-master ~/opencv/opencv
-mkdir -p ~/opencv/build && cd ~/opencv/build
+#mkdir -p ~/opencv/build && cd ~/opencv/build
+mkdir opencv/opencv-master/build
 export JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:bin/java::")
 #export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-armhf"
 #https://www.learnopencv.com/build-and-install-opencv-4-for-raspberry-pi/
